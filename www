@@ -4,8 +4,8 @@
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('comp229-week3:server');
+var app = require('./config/app');
+var debug = require('debug')('comp229-week1:server');
 var http = require('http');
 
 /**
@@ -87,4 +87,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  console.log("running on http://localhost: ${port}")
 }
